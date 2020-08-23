@@ -61,7 +61,6 @@ public:
 
 };
 
-
 rtc::rtc(unsigned int bus, unsigned int device)
 {
 	this->file=-1;
@@ -76,8 +75,6 @@ rtc::~rtc()
 	RTCclose();
 	cout <<	"program terminated " << endl;
 }
-
-
 
 /*
 RTCSetTime() takes three integer arguments (hour, minute, second). These values are passed 
@@ -127,7 +124,6 @@ int rtc::RTCSetDate(int day, int month, int year, int weekday)
 	cout << "exe!" << endl;
 	return 0;
 }
-
 
 /*
 The RTCAlarmActive() function compares the values in 0x10 - 0x15 to the current time values in 
